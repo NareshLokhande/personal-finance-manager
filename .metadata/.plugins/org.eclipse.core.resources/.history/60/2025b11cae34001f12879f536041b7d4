@@ -1,0 +1,24 @@
+package com.fintechsolution.personalfinancemanager.models;
+
+import java.sql.Date;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+@Entity
+public class SupportTicket{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String issue;
+    private String status;
+    private Date createdDate;
+
+    @ManyToOne
+    @JoinColumn(name = "account_id")
+    private Account account;
+
+    // Getters and Setters
+}

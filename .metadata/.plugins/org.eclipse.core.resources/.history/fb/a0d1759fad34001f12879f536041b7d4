@@ -1,0 +1,14 @@
+package com.fintechsolution.personalfinancemanager.models;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Account {
+	@Id
+	private long id;
+	private String accountNumber;
+	private String accountHolderName;
+	private double balance;
+	
+}

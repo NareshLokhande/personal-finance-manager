@@ -1,0 +1,11 @@
+package com.fintechsolution.personalfinancemanager.models;
+
+@Entity
+public class Account {
+	
+	private long id;
+	private String accountNumber;
+	private String accountHolderName;
+	
+	
+}

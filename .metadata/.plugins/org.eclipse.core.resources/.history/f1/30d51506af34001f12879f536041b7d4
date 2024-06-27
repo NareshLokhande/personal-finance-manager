@@ -1,0 +1,5 @@
+package com.fintechsolution.personalfinancemanager.services;
+
+public class SupportTicketService {
+
+}

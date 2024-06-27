@@ -1,0 +1,5 @@
+package com.fintechsolution.personalfinancemanager.repository;
+
+public interface SupportTicketRepository JpaRepository<SupportTicket, Long>{
+
+}
